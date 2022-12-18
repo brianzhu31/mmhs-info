@@ -1,0 +1,27 @@
+.sidebar {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  z-index: 1000;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar-container {
+  width: 95px;
+  height: 800px;
+  border-right: solid;
+  border-width: 0.2px;
+  border-color: rgba(220, 220, 220, 0.2);
+  margin-top: -15px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 960px) {
+
+  .sidebar {
+    display: none;
+  }
+  
+}

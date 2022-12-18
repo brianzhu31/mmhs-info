@@ -1,0 +1,37 @@
+.navbar {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  align-items: center;
+  z-index: 999;
+  background-color: var(--main-navy-blue)
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  width: 100%;
+  border-bottom: solid;
+  border-color: rgba(220, 220, 220, 0.2);
+  border-width: 0.2px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.navbar-logo {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: auto;
+  padding: 0 50px;
+}
+
+.menu-icon {
+  font-size: 1.3rem;
+  margin-left: auto;
+  padding: 5px 30px;
+  border-left: solid;
+  border-color: rgba(220, 220, 220, 0.2)
+}
