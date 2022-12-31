@@ -1,0 +1,173 @@
+.menu {
+  visibility: visible;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  opacity: 1;
+  transition: visibility 1s, opacity 0.2s linear;
+}
+
+.menu-off {
+  visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.15s linear;
+}
+
+
+.menu-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 150px 100px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  font-size: 2.8rem;
+}
+
+.menu-list-item-off {
+  visibility: hidden;
+  display: block;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.15s linear;
+}
+
+.menu-list-text {
+  cursor: pointer;
+}
+
+.menu-list-text:hover {
+  color: var(--gray);
+  transition: 0.2s linear;
+}
+
+/* Each of menu-list-item nth child have same transition but different delay to achieve a chain effect */
+
+.menu-list-item:nth-child(1) {
+  transition: visibility 1s, opacity 0.2s linear 0.2s;
+}
+
+.menu-list-item:nth-child(2) {
+  transition: visibility 1s, opacity 0.2s linear 0.35s;
+}
+
+.menu-list-item:nth-child(3) {
+  transition: visibility 1s, opacity 0.2s linear 0.5s;
+}
+
+.menu-list-item:nth-child(4) {
+  transition: visibility 1s, opacity 0.2s linear 0.65s;
+}
+
+.menu-list-item:nth-child(5) {
+  transition: visibility 1s, opacity 0.2s linear 0.8s;
+}
+
+
+.menu-link {
+  text-decoration: none;
+}
+
+.menu-dropdown-item {
+  list-style-type: none;
+  display: none;
+}
+
+.menu-dropdown-item p{
+  color: var(--light-gray);
+  font-size: 2.4rem;
+  margin: 40px 0px;
+}
+
+#activities-dropdown-container {
+  width: 240px;
+  position: absolute;
+}
+
+#menu-list-text-activities:hover + #activities-dropdown-container li {
+  display: block;
+}
+
+#menu-list-text-activities:hover + #activities-dropdown-container li {
+  transform-origin: top-center;
+  opacity: 0;
+}
+
+#menu-list-text-activities:hover + #activities-dropdown-container li:nth-child(1) {
+  animation: slideDown 300ms ease-in-out forwards;
+  animation-delay: 0ms;
+}
+
+#menu-list-text-activities:hover + #activities-dropdown-container li:nth-child(2) {
+  animation: slideDown 300ms ease-in-out forwards;
+  animation-delay: 150ms;
+}
+
+#menu-list-text-activities:hover + #activities-dropdown-container li:nth-child(3) {
+  animation: slideDown 300ms ease-in-out forwards;
+  animation-delay: 300ms;
+}
+
+#activities-dropdown-container:hover > .menu-dropdown-item{
+  display: block;
+  opacity: 1;
+}
+
+#about-dropdown-container {
+  width: 240px;
+  position: absolute;
+}
+
+#menu-list-text-about:hover + #about-dropdown-container li {
+  display: block;
+}
+
+#menu-list-text-about:hover + #about-dropdown-container li {
+  transform-origin: top-center;
+  opacity: 0;
+}
+
+#menu-list-text-about:hover + #about-dropdown-container li:nth-child(1) {
+  animation: slideDown 300ms ease-in-out forwards;
+  animation-delay: 0ms;
+}
+
+#menu-list-text-about:hover + #about-dropdown-container li:nth-child(2) {
+  animation: slideDown 300ms ease-in-out forwards;
+  animation-delay: 150ms;
+}
+
+#menu-list-text-about:hover + #about-dropdown-container li:nth-child(3) {
+  animation: slideDown 300ms ease-in-out forwards;
+  animation-delay: 300ms;
+}
+
+#about-dropdown-container:hover > .menu-dropdown-item{
+  display: block;
+  opacity: 1;
+}
+
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
