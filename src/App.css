@@ -1,6 +1,8 @@
 :root {
-  --main-navy-blue: rgb(20, 23, 35);
-  --white: rgba(220, 220, 220)
+  --main-navy-blue: rgb(19, 21, 32);
+  --white: rgb(220, 220, 220);
+  --gray: rgb(110, 110, 110);
+  --light-gray: rgb(140, 140, 140);
 }
 
 * {
@@ -8,10 +10,15 @@
   margin: 0;
   padding: 0;
   background-color: var(--main-navy-blue);
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--white);
 }
 
 .App {
   justify-content: center;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: row;
 }
