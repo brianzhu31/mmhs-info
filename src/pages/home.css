@@ -1,0 +1,39 @@
+.home {
+  width: 100%;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 60vh;
+  line-height: 120px;
+}
+
+.school-name-text-container {
+  text-align: center;
+  animation: 2s ease-out 0s 1 slideIn;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading-container h1 {
+  font-size: 110px;
+  color: var(--white);
+}
+
+.heading-container h2 {
+  font-size: 90px;
+  color: var(--light-gray);
+}
+
