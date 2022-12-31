@@ -1,11 +1,10 @@
 .navbar {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  display: flex;
   position: sticky;
   align-items: center;
-  z-index: 999;
-  background-color: var(--main-navy-blue)
+  z-index: 1000;
+  background-color: var(--main-navy-blue);
+  top: 0;
 }
 
 .navbar-container {
@@ -14,7 +13,7 @@
   height: 90px;
   width: 100%;
   border-bottom: solid;
-  border-color: rgba(220, 220, 220, 0.2);
+  border-color: rgba(220, 220, 220, 0.1);
   border-width: 0.2px;
   align-items: center;
   justify-content: center;
@@ -23,15 +22,24 @@
 
 .navbar-logo {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: auto;
   padding: 0 40px;
+  color: rgba(200, 200, 200);
+  font-weight: bold;
 }
 
 .menu-icon {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
   margin-left: auto;
-  padding: 5px 30px;
+  padding: 15px 0px;
+  width: 110px;
+  text-align: center;
+  margin-right: 10px;
   border-left: solid;
-  border-color: rgba(220, 220, 220, 0.2)
+  border-width: 0.7px;
+  border-color: rgba(220, 220, 220, 0.15);
+  color: rgba(200, 200, 200);
+  cursor: pointer;
 }
