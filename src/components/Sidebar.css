@@ -1,21 +1,36 @@
 .sidebar {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  width: 95px;
   position: sticky;
-  z-index: 1000;
+  z-index: 998;
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0);
 }
 
 .sidebar-container {
   width: 95px;
-  height: 800px;
+  min-height: 100vh;
+  height: 100%;
   border-right: solid;
   border-width: 0.2px;
-  border-color: rgba(220, 220, 220, 0.2);
-  margin-top: -15px;
+  border-color: rgba(220, 220, 220, 0.1);
   background-color: rgba(0, 0, 0, 0);
+}
+
+.ig-icon-container {
+  padding: 10px 10px;
+  justify-content: center;
+  position: fixed;
+  bottom: 70px;
+  left: 25px;
+}
+
+.git-icon-container {
+  padding: 10px 10px;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 25px;
 }
 
 @media screen and (max-width: 960px) {
