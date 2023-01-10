@@ -171,3 +171,44 @@
   }
 }
 
+@media screen and (max-width: 639px) {
+
+  .menu-list-container {
+    gap: 20%;
+  }
+
+  .menu-list-text {
+    font-size: 2.2rem;
+  }  
+
+  .menu-dropdown-item p {
+    font-size: 1.9rem;
+  }
+
+}
+
+@media screen and (max-width: 441px) {
+
+  .menu-list-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-top: 200px;
+  }
+
+  .menu-list-text {
+    font-size: 2rem;
+  }  
+
+  .menu-dropdown-item p {
+    font-size: 1.75rem;
+  }
+
+  #activities-dropdown-container {
+    text-align: center;
+  }
+
+  #about-dropdown-container {
+    text-align: center;
+  }
+
+}
