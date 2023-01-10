@@ -37,3 +37,38 @@
   color: var(--light-gray);
 }
 
+@media screen and (max-width: 710px) {
+
+  .heading-container h1{
+    font-size: 85px;
+  }
+
+  .heading-container h2{
+    font-size: 67px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .heading-container h1{
+    font-size: 70px;
+  }
+
+  .heading-container h2{
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  .heading-container h1{
+    font-size: 55px;
+  }
+
+  .heading-container h2{
+    font-size: 48px;
+  }
+
+}
