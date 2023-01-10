@@ -3,7 +3,7 @@ import './clubs.css'
 
 export default function Clubs() {
   return (
-    <div className='clubs'>Clubsss</div>
+    <div className='clubs'>Clubs</div>
   )
 }
 
